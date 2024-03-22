@@ -1,0 +1,38 @@
+:root {
+    --dark-lines: #dcdcdc;
+    --black: black;
+ }
+
+/* * {
+    margin: 0px;
+} */
+
+/* Dark Mode */
+.dark {
+    background-color:#292929;
+    color: var(--dark-lines);
+    height: 100vh;
+  }
+  
+  .dark li a {
+    color: var(--dark-lines);
+  }
+  
+  .dark li a:hover {
+    background-color: #111;
+  }
+
+  /* Light Mode */
+.light {
+    background-color: #f0ead6;
+    color: var(--black);
+    height: 100vh;
+  }
+  
+  .light li a {
+    color: var(--black);
+  }
+  
+  .light li a:hover {
+    background-color: rgb(135, 163, 255);
+  }
