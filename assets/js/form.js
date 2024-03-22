@@ -1,35 +1,45 @@
+// grabs reference data from the DOM
 const submitForm = document.querySelector('#submit-button');
+const usernameInput = document.querySelector('#username');
+const titleInput = document.querySelector('#title-name');
+const contentInput = document.querySelector('#content-text');
 
+// Uses the submit button to update local storage and change the page
 submitForm.addEventListener('click', function(){
-    window.location.href = 'blog.html';
+       //object to store form information
+    const blogStorage = {
+        username: usernameInput.value.trim(),
+        title: titleInput.value.trim(),
+        content: contentInput.value.trim(),
+    };
+
+    // checks if the form has been filled out (helped by Xpert)
+    function checkFormCompletion() {
+        if (usernameInput.value.trim() === '') {
+            return false;
+        } else if (titleInput.value.trim() === '') {
+            return false;
+        } else if (contentInput.value.trim() === '') {
+            return false;
+        } else
+        // If all input fields are filled, return true
+        return true;
+    }
+
+    let isFormComplete = checkFormCompletion();
+    // logic to kick back if form boxes are empty
+    if (isFormComplete != true) {
+        alert("Please complete the form!")
+    } else {
+    // command that stores the data to local storage
+    localStorage.setItem('blogData', JSON.stringify(blogStorage));
+    // changes the page to blog
+    window.location.href = 'blog.html'; 
+    }
 })
-// 1) We NEED HTML elements on the screen/page 
-// 2) We need to GRAB reference to the ELEMENT on the DOM
-// Q) HOW do we capture the DATA (?)
-// 3) We need to setup an EVENT listener
 
-
-// we might consider putting the data into a structure for us to use
-/* var newBlog = { 
-    username: "",
-    title: "",
-    content: "" 
-} */
-
-
-
-// 4) Once we capture the data we want to ADD the NEW data to localStorage
-// 
-
-
-
-// -- localStorage -- // --> Database in the browser (Cookies)
-// local storgage can ONLY STORE STRING TYPE DATA
-// JSON OBJECT 
-
-/*
 // JSON is a STRING OBJECT
-jsonObj = {
+/* jsonObj = {
     "key": "value",
     "name": "Sara"
 }
@@ -38,9 +48,7 @@ jsObj = {
     key: "value",
     name: "Sara",
     age: 25
-}
-
-*/
+} */
 
 // Data Conversion is importatnt
 // convert JSON String to JS OBJECT  --> JSON.parse(stringData)
