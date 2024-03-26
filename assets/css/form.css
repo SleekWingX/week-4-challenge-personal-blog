@@ -1,0 +1,38 @@
+.dark-light {
+    position: absolute;
+    right: 0;
+}
+
+h1 {
+    position: absolute;
+    font-size: 500%;
+    top: 30%;
+    left: 25%;
+}
+
+#blog-form {
+    display: block;
+    position: absolute;
+    top: 55%;
+    left: 40%;
+}
+
+.input {
+    padding: 1px;
+}
+
+#title-name {
+    position: absolute;
+    left: 19%;
+}
+
+#content-text {
+    width: 300px;
+    height: 100px;
+}
+
+#submit-button {
+    position: absolute;
+    left: 50%;
+    top: 85%;
+}

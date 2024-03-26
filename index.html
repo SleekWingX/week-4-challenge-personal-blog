@@ -3,28 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
     <link rel="stylesheet" href="./assets/css/form.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Blog Form</title>
 </head>
-<body>
-    <div class="container light">
+<body class="container light">
+    <!-- dark light mode switcher -->
     <label class="dark-light">
         <label for="theme-switcher">Dark/Light Mode</label>
         <input type="checkbox" id="theme-switcher">
         <span class="slider round"></span>
       </label>
+    <!-- title -->
     <h1>My First Blog</h1>
+    <!-- form -->
     <form id="blog-form">
+        <div class="input">
         <label for="username">Username</label>
         <input type="text" id="username" placeholder="Please enter username">
+        </div>
+        <br>
+        <div class="input">
         <label for="title-name">Title</label>
         <input type="text" id="title-name" placeholder="Enter Blog Title">
+        </div>
+        <br>
+        <div class="input">
         <label for="content-text">Content</label>
         <input type="text" id="content-text" placeholder="Type blog info here.">
+        </div>
     </form>
+    <!-- submit button -->
     <button id="submit-button">Submit</button>
-    </div>
+    <!-- javascript -->
     <script src="./assets/js/logic.js"></script>
     <script src="./assets/js/form.js"></script>
 </body>

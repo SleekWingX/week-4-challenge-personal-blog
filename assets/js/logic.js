@@ -1,6 +1,7 @@
 const themeSwitcher = document.querySelector('#theme-switcher');
 const container = document.querySelector('.container');
 
+/* sets a default mode for the page */
 let mode = 'light';
 
 // creates toggle for dark-light mode on switcher button

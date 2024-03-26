@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css stylesheets -->
     <link rel="stylesheet" href="./assets/css/blog.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Blog Page</title>
 </head>
-<body>
-    <div class="container light">
+<body class="container light">
+    <!-- header containing title, back button, and dark/light switch -->
     <header>
         <h2>My First Blog</h2>
         <button id="back-button">Back</button>
@@ -18,9 +19,16 @@
             <span class="slider round"></span>
         </label>
     </header>
+    <!-- ul that will be populated by elements created by local data and javascript -->
     <ul id="blog-list">
     </ul>
-    </div>
+    <!-- footer with link to portfolio -->
+    <footer>
+        <p>
+            Portfolio: <a href="https://sleekwingx.github.io/week-2-challenge-jack-yazzie-portfolio/">Jack Yazzie</a>
+        </p>
+    </footer>
+    <!-- javascript -->
     <script src="./assets/js/blog.js"></script>
     <script src="./assets/js/logic.js"></script>
 </body>

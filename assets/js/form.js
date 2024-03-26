@@ -4,8 +4,10 @@ const usernameInput = document.querySelector('#username');
 const titleInput = document.querySelector('#title-name');
 const contentInput = document.querySelector('#content-text');
 
+//bloglist array to plug into local data
 let blogList = [];
 
+// function to grab the stored data and add it to the end of the local data
 function init() {
     
     const storedBlog = JSON.parse(localStorage.getItem('blogData'));
@@ -51,31 +53,3 @@ submitForm.addEventListener('click', function(){
 });
 
 init();
-
-// JSON is a STRING OBJECT
-/* jsonObj = {
-    "key": "value",
-    "name": "Sara"
-}
-
-jsObj = {
-    key: "value",
-    name: "Sara",
-    age: 25
-} */
-
-// Data Conversion is importatnt
-// convert JSON String to JS OBJECT  --> JSON.parse(stringData)
-// convert JS ONject  to JSON Object  --> JSON.stringify(jsData)
-
-
-/* localStorage.setItem('blogs', JSON.stringify(["blog-1", 'blog-2']))
-var storedData = localStorage.getItem('blogs');
-console.log("Data: ", storedData)
-console.log("Type: ", typeof storedData)
-var jsData = JSON.parse(storedData);
-console.log("Data: ", jsData)
-console.log("Type: ", typeof jsData)
-jsData.push("Bingo")
-console.log("Data: ", jsData) */
-

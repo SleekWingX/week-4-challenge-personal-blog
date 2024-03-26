@@ -1,0 +1,41 @@
+.blog-element {
+    border: 5px black;
+    outline-style: outset;
+    padding: 5px;
+    padding-left: 10px;
+    padding-top: 3px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.blog-element h3 {
+    padding-left: 5px;
+    border-bottom: 3px black;
+    outline-style: solid;
+}
+
+header {
+    display: inline;
+    margin: 10px;
+    border-bottom: 7px black;
+    outline-style: solid;
+    padding: 10px;
+}
+
+.dark-light {
+    position: absolute;
+    right: 50px;
+}
+
+#back-button {
+    position: absolute;
+    right: 0;
+}
+
+h2 {
+    display: inline;
+}
+
+ul {
+    list-style-type: none;
+}
