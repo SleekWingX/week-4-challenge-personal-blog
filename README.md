@@ -6,6 +6,8 @@ A blog page to show how filling out a form and storing data in local storage can
 
 ![alt text](image-1.png)
 
+https://sleekwingx.github.io/week-4-challenge-personal-blog/
+
 ## Resources
 
 Xpert Learning Assistant. (2024, March 22nd) https://bootcampspot.instructure.com/courses/5271/external_tools/313
